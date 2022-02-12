@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My life in...</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href= "css/styles.css">
+</head>
+<body>
+   
+    <section> 
+        
+        <div class="bannerVideo" id=slideShow>
+            <video src="img/modif.mp4"autoplay muted loop class="active ruta"></video>
+            <video src="img/video.mov"autoplay muted loop class="ruta"></video>
+            <video src="img/IMG_4700.MOV"autoplay muted loop class="ruta"></video>
+            <video src="img/oporto_Trim.mp4" autoplay muted loop class="ruta"></video>
+            <video src="img/recortado.nieve.mp4" autoplay muted loop class="ruta"></video>
+            <video src="img/pajaro.MOV" autoplay muted loop class="ruta"></video>
+            <video src="img/sicilia.MOV" autoplay muted loop class="ruta"></video>
+            <video src="img/nieve.mp4" autoplay muted loop class="ruta"></video>
+            <video src="img/españa madrid.MOV" autoplay muted loop class="ruta"></video>
+            <video src="img/manarola.MOV" autoplay muted loop class="ruta"></video>
+            <video src="img/pisa.MOV" autoplay muted loop class="ruta"></video>
+            <video src="img/veneca.MOV" autoplay muted loop class="ruta"></video>
+            <video src="img/viena.MOV "autoplay muted loop class="ruta"></video>
+            <video src="img/segovia.MOV "autoplay muted loop class="ruta"></video>
+            
+
+           
+            
+            
+        </div>
+        <div class="container">
+            <header id="navbar">
+                <a href="#" class= "logo"></a>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="./viajes/index.html">Countries</a></li>
+                    <li><a href="./contact/index.html">Contact</a></li>
+                    <li><a href="./about/index.html">About</a></li>
+                    
+                </ul>
+                <span class="menuIcon" onclick= "toggleMenu();">M</span>
+            </header>
+            <div class="content">
+                <div class="bannerText" id="slideShowText">
+                   <div class="active">
+                       <h2>Torino</h2>
+                       <p> Romantic sunsets from the Mont dei Cappucini. The Picturesque Mole Antonelliana. Impressive views, fashion, art and nice people are everywhere you look.</p>
+                   </div> 
+                   <div>
+                    <h2>Firenze, Italy</h2>
+                    <p> Santa Croce, Duomo, ponte Vecchio and gelato! A city full of beauty. Just stunning and inspiring </p>
+                    
+                </div> 
+                <div>
+                    <h2>USA-The east coast</h2>
+                    <p> After living almost two years in USA and seing 25 states; I have a handful of favorites places: New York, Boston, Chicago and epecially Washington DC. My favorites experiences  inlcude seing  a blend of history and technology, an incredible road-trip to the Smoky mountains and seeing  trick-or-treaters on Halloween</p>
+                </div> 
+                <div>
+                    <h2>Oporto, Portugal</h2>
+                    <p>Unforgettable places. Mouth-watering food -I wont be able to forget the Francesinia-. The historic city of Porto is a UNESCO World Heritage Site. I got a bus ride only for 4 euros go and back from Madrid! Definitly going back one day.</p>
+                </div> 
+                <div>
+                    <h2>Ozegna</h2>
+                    <p>The coziest town to which I  have ever been. I will always remember its snow and the many roofs full of snowflackes. Or me crushing ice the next day. Ozegna made one of my deepest dreams come true. To me,  Ozegna means family.</p>
+                </div>
+               
+                <div>
+                    <h2>Rome</h2>
+                    <p> Antique. Magic. Rome makes you feel small into such a big paradise. Every single roof of the Vatican its worthy to look at. Sweet, sweet Rome.</p>
+                    
+                </div> 
+                <div>
+                    <h2>Sicily</h2>
+                    
+                    <p> 7 days roadtrip! This is how paradise looks like. Aci, Taormina, Siracusa, Ragusa, Noto, Modica, Trapani and Palermo. You will run into monuments, ruins, temples and even the "Scala dei Turchi", a rocky cliff on the coast southern Sicily, which is indescribable. </p>
+                    
+                </div> 
+                <div>
+                    <h2>Sequoia Park</h2>
+                    <p>An american national park in the southern Sierra Nevada mountains, US. It is notable for it giants Sequoias, including the General Sheraman tree, the largest tree on Earth. </p>
+                    
+                </div> 
+                <div>
+                    <h2>Madrid, Spain</h2>
+                    <p> Universities, tapas, palaces and history.</p>
+                    
+                </div> 
+                <div>
+                    <h2>Manarola</h2>
+                   
+                    
+                </div> 
+                <div>
+                    <h2>Pisa</h2>
+                  
+                    
+                </div> 
+                <div>
+                    <h2>Venezia</h2>
+                   
+                    
+                </div> 
+                <div>
+                    <h2>Vienna, Austria</h2>
+                  
+                    
+                </div> 
+                <div>
+                    <h2>Segovia, Spain</h2>
+                  
+                    
+                </div> 
+
+                </div>
+            </div>
+            <ul class="sci">
+                <li><a href="#"><img src= "img/facebook-logo.png" class="foto"></a></li>
+                <li><a href="#"><img src= "img/INSTARO.png" class="foto"></a></li>
+            </ul>
+            <ul class="controls">
+                <li onclick="prevSlide();prevSlideText();"><img src="img/izqu.png" class="botone2"></li>
+                <li onclick="nextSlide();nextSlideText();"><img src="img/derechava.png" class="botone1"></li>
+            </ul>
+        </div>
+    </section>
+    <script>
+        const slideShow = document.getElementById("slideShow");
+        const slides = slideShow.getElementsByTagName("video");
+        let index = 0 ;
+        function nextSlide(){
+            slides[index].classList.remove("active");
+            index = (index + 1 ) % slides.length;
+            slides[index].classList.add("active");
+        };
+        function prevSlide(){
+            slides[index].classList.remove("active");
+            index = (index - 1 + slides.length) % slides.length;
+            slides[index].classList.add("active");
+        }
+
+
+
+        const slideShowText = document.getElementById("slideShowText");
+        const slidesText = slideShowText.getElementsByTagName("div");
+        let i = 0 ;
+        function nextSlideText(){
+            slidesText[i].classList.remove("active");
+            i = (i + 1 ) % slidesText.length;
+            slidesText[i].classList.add("active");
+        };
+        function prevSlideText(){
+            slidesText[i].classList.remove("active");
+            i = (i - 1 + slidesText.length) % slidesText.length;
+            slidesText[i].classList.add("active");
+        }
+
+        function toggleMenu(){
+        const menuIcon = document.querySelector(".menuIcon");
+        const navbar = document.getElementById("navbar");
+        menuIcon.classList.toggle("active");
+        navbar.classList.toggle("active");
+    }
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/sweetalert.js"></script>
+    
+</body>
+</html>
